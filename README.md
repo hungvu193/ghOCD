@@ -8,11 +8,32 @@ Browsers cannot run `git` directly, so **one-click checkout** uses a tiny **loca
 
 ## Demo
 
-Videos play inline below on **github.com** (they load from the `main` branch via `raw.githubusercontent.com`). If playback fails—for example on a fork that does not include these files—use the links in the table headers or open the files locally.
+Inline playback uses **raw HTML** (an HTML `<table>`, not a Markdown `| … |` table). GitHub’s Markdown parser does not treat pipe-table cells as full HTML documents, so `<video>` there is often stripped or shows **no thumbnail / blank preview** even though the file is valid.
 
-| Default copy button — [`demo/demo.mp4`](demo/demo.mp4) | Copy script button — [`demo/demo2.mp4`](demo/demo2.mp4) |
-| --- | --- |
-| <video controls playsinline width="100%" style="max-width:420px;border-radius:8px;background:#0d1117;display:block;margin:0 auto"> <source src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo.mp4" type="video/mp4"> Your browser does not support inline video. <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4">Open on GitHub</a>. </video> | <video controls playsinline width="100%" style="max-width:420px;border-radius:8px;background:#0d1117;display:block;margin:0 auto"> <source src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo2.mp4" type="video/mp4"> Your browser does not support inline video. <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4">Open on GitHub</a>. </video> |
+Videos load from the `main` branch via `raw.githubusercontent.com`. If a player still does not appear, open the file on GitHub—**the blob page shows a proper preview**—or play the file locally.
+
+<table>
+<thead>
+<tr>
+<th align="center">Default copy button — <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4"><code>demo/demo.mp4</code></a></th>
+<th align="center">Copy script button — <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4"><code>demo/demo2.mp4</code></a></th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center">
+<video controls playsinline preload="metadata" src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo.mp4" width="420">
+  <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4">Open demo/demo.mp4 on GitHub</a>
+</video>
+</td>
+<td align="center">
+<video controls playsinline preload="metadata" src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo2.mp4" width="420">
+  <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4">Open demo/demo2.mp4 on GitHub</a>
+</video>
+</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
