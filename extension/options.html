@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>gh-ocd settings</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 42rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+      input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0.25rem;
+        padding: 0.5rem;
+      }
+      .hint {
+        font-size: 0.875rem;
+        color: #57606a;
+        margin-top: 0.25rem;
+      }
+      button {
+        margin-top: 1.25rem;
+        padding: 0.5rem 1rem;
+      }
+      #status {
+        margin-top: 1rem;
+        min-height: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>gh-ocd</h1>
+    <p>Configure your local clone and companion server (see <code>companion/server.mjs</code>).</p>
+
+    <label for="cwd">Git working directory (your Expensify/App clone)</label>
+    <input type="text" id="cwd" placeholder="/Users/you/Code/App" autocomplete="off" />
+    <p class="hint">Commands run with this as the current working directory.</p>
+
+    <label for="baseUrl">Companion URL</label>
+    <input type="text" id="baseUrl" value="http://127.0.0.1:17373" autocomplete="off" />
+    <p class="hint">Must match the server bind address.</p>
+
+    <label for="token">Shared token (optional)</label>
+    <input type="text" id="token" placeholder="same as GITHUB_PR_CHECKOUT_TOKEN" autocomplete="off" />
+    <p class="hint">If the server expects a token, set the same value in server env and here.</p>
+
+    <button type="button" id="save">Save</button>
+    <div id="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
