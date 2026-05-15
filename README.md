@@ -8,14 +8,11 @@ Browsers cannot run `git` directly, so **one-click checkout** uses a tiny **loca
 
 ## Demo
 
-Screen recordings live under [`demo/`](demo/):
+Videos play inline below on **github.com** (they load from the `main` branch via `raw.githubusercontent.com`). If playback fails—for example on a fork that does not include these files—use the links in the table headers or open the files locally.
 
-| File | Description |
-|------|-------------|
-| [`demo/demo2.mp4`](demo/demo2.mp4) | Latest walkthrough |
-| [`demo/demo.mp4`](demo/demo.mp4) | Earlier demo |
-
-**How to watch:** on GitHub, open the file in the repo and use the player or download. Locally, open the `.mp4` with your system video app or drag it into a browser tab.
+| Default copy button — [`demo/demo.mp4`](demo/demo.mp4) | Copy script button — [`demo/demo2.mp4`](demo/demo2.mp4) |
+| --- | --- |
+| <video controls playsinline width="100%" style="max-width:420px;border-radius:8px;background:#0d1117;display:block;margin:0 auto"> <source src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo.mp4" type="video/mp4"> Your browser does not support inline video. <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4">Open on GitHub</a>. </video> | <video controls playsinline width="100%" style="max-width:420px;border-radius:8px;background:#0d1117;display:block;margin:0 auto"> <source src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo2.mp4" type="video/mp4"> Your browser does not support inline video. <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4">Open on GitHub</a>. </video> |
 
 ---
 
