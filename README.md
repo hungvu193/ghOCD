@@ -8,32 +8,15 @@ Browsers cannot run `git` directly, so **one-click checkout** uses a tiny **loca
 
 ## Demo
 
-Inline playback uses **raw HTML** (an HTML `<table>`, not a Markdown `| … |` table). GitHub’s Markdown parser does not treat pipe-table cells as full HTML documents, so `<video>` there is often stripped or shows **no thumbnail / blank preview** even though the file is valid.
+GitHub **strips `<video>` and most HTML** from repository READMEs, and the README **web editor preview** (`…/edit/…`) can fail or look blank when that markup is present. This section stays **Markdown-only** so rendering and previews stay reliable.
 
-Videos load from the `main` branch via `raw.githubusercontent.com`. If a player still does not appear, open the file on GitHub—**the blob page shows a proper preview**—or play the file locally.
+| Default copy button — `demo/demo.mp4` | Copy script button — `demo/demo2.mp4` |
+| --- | --- |
+| **[Watch on GitHub (player + thumbnail)](https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4)** · [Raw `.mp4`](https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo.mp4) | **[Watch on GitHub (player + thumbnail)](https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4)** · [Raw `.mp4`](https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo2.mp4) |
 
-<table>
-<thead>
-<tr>
-<th align="center">Default copy button — <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4"><code>demo/demo.mp4</code></a></th>
-<th align="center">Copy script button — <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4"><code>demo/demo2.mp4</code></a></th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center">
-<video controls playsinline preload="metadata" src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo.mp4" width="420">
-  <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo.mp4">Open demo/demo.mp4 on GitHub</a>
-</video>
-</td>
-<td align="center">
-<video controls playsinline preload="metadata" src="https://raw.githubusercontent.com/hungvu193/ghOCD/main/demo/demo2.mp4" width="420">
-  <a href="https://github.com/hungvu193/ghOCD/blob/main/demo/demo2.mp4">Open demo/demo2.mp4 on GitHub</a>
-</video>
-</td>
-</tr>
-</tbody>
-</table>
+**Inline playback on the readme itself:** on github.com open this file → **edit** → drag each demo MP4 into the editor. GitHub inserts a `https://github.com/user-attachments/assets/…` URL—leave that alone on its own line and commit; those links render as the familiar inline GitHub player. The copies under `demo/` remain the canonical files for the repo and clones.
+
+Can't open **`/edit/main/README.md`?** You must be [**signed in**](https://github.com/login) and have **push** access to [`hungvu193/ghOCD`](https://github.com/hungvu193/ghOCD). Forks keep the fork’s URL (for example `/edit/main/README.md` on *your* fork).
 
 ---
 
